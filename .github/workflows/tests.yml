@@ -21,10 +21,6 @@ jobs:
 
       - name: Build
         run: |
-          aclocal
-          autoconf
-          automake --add-missing
-          ./configure
           cmake
           make
 
