@@ -61,118 +61,11 @@ configure:2569: checking whether make sets $(MAKE)
 configure:2592: result: yes
 configure:2622: checking whether make supports nested variables
 configure:2640: result: yes
-configure:2845: checking for g++
-configure:2866: found /usr/bin/g++
-configure:2877: result: g++
-configure:2904: checking for C++ compiler version
-configure:2913: g++ --version >&5
-g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
-Copyright (C) 2021 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-configure:2924: $? = 0
-configure:2913: g++ -v >&5
-Using built-in specs.
-COLLECT_GCC=g++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
-Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-... rest of stderr output deleted ...
-configure:2924: $? = 0
-configure:2913: g++ -V >&5
-g++: error: unrecognized command-line option '-V'
-g++: fatal error: no input files
-compilation terminated.
-configure:2924: $? = 1
-configure:2913: g++ -qversion >&5
-g++: error: unrecognized command-line option '-qversion'; did you mean '--version'?
-g++: fatal error: no input files
-compilation terminated.
-configure:2924: $? = 1
-configure:2944: checking whether the C++ compiler works
-configure:2966: g++    conftest.cpp  >&5
-configure:2970: $? = 0
-configure:3020: result: yes
-configure:3023: checking for C++ compiler default output file name
-configure:3025: result: a.out
-configure:3031: checking for suffix of executables
-configure:3038: g++ -o conftest    conftest.cpp  >&5
-configure:3042: $? = 0
-configure:3065: result: 
-configure:3087: checking whether we are cross compiling
-configure:3095: g++ -o conftest    conftest.cpp  >&5
-configure:3099: $? = 0
-configure:3106: ./conftest
-configure:3110: $? = 0
-configure:3125: result: no
-configure:3130: checking for suffix of object files
-configure:3153: g++ -c   conftest.cpp >&5
-configure:3157: $? = 0
-configure:3179: result: o
-configure:3183: checking whether the compiler supports GNU C++
-configure:3203: g++ -c   conftest.cpp >&5
-configure:3203: $? = 0
-configure:3213: result: yes
-configure:3224: checking whether g++ accepts -g
-configure:3245: g++ -c -g  conftest.cpp >&5
-configure:3245: $? = 0
-configure:3289: result: yes
-configure:3309: checking for g++ option to enable C++11 features
-configure:3324: g++  -c -g -O2  conftest.cpp >&5
-conftest.cpp: In function 'int main(int, char**)':
-conftest.cpp:177:25: warning: empty parentheses were disambiguated as a function declaration [-Wvexing-parse]
-  177 |   cxx11test::delegate d2();
-      |                         ^~
-conftest.cpp:177:25: note: remove parentheses to default-initialize a variable
-  177 |   cxx11test::delegate d2();
-      |                         ^~
-      |                         --
-conftest.cpp:177:25: note: or replace parentheses with braces to value-initialize a variable
-configure:3324: $? = 0
-configure:3342: result: none needed
-configure:3409: checking whether make supports the include directive
-configure:3424: make -f confmf.GNU && cat confinc.out
-this is the am__doit target
-configure:3427: $? = 0
-configure:3446: result: yes (GNU style)
-configure:3472: checking dependency style of g++
-configure:3584: result: gcc3
-configure:3738: checking that generated files are newer than configure
-configure:3744: result: done
-configure:3767: creating ./config.status
-
-## ---------------------- ##
-## Running config.status. ##
-## ---------------------- ##
-
-This file was extended by program config.status 1.0, which was
-generated by GNU Autoconf 2.71.  Invocation command line was
-
-  CONFIG_FILES    = 
-  CONFIG_HEADERS  = 
-  CONFIG_LINKS    = 
-  CONFIG_COMMANDS = 
-  $ ./config.status 
-
-on virtual-machine
-
-config.status:769: creating Makefile
-config.status:941: executing depfiles commands
-config.status:1018: cd .       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
-make: Nothing to be done for 'am--depfiles'.
-config.status:1023: $? = 0
 
 ## ---------------- ##
 ## Cache variables. ##
 ## ---------------- ##
 
-ac_cv_cxx_compiler_gnu=yes
 ac_cv_env_CCC_set=
 ac_cv_env_CCC_value=
 ac_cv_env_CPPFLAGS_set=
@@ -191,17 +84,10 @@ ac_cv_env_host_alias_set=
 ac_cv_env_host_alias_value=
 ac_cv_env_target_alias_set=
 ac_cv_env_target_alias_value=
-ac_cv_objext=o
 ac_cv_path_install='/usr/bin/install -c'
 ac_cv_path_mkdir=/usr/bin/mkdir
 ac_cv_prog_AWK=mawk
-ac_cv_prog_ac_ct_CXX=g++
-ac_cv_prog_cxx_11=no
-ac_cv_prog_cxx_cxx11=
-ac_cv_prog_cxx_g=yes
-ac_cv_prog_cxx_stdcxx=
 ac_cv_prog_make_make_set=yes
-am_cv_CXX_dependencies_compiler_type=gcc3
 am_cv_make_support_nested_variables=yes
 
 ## ----------------- ##
@@ -209,8 +95,8 @@ am_cv_make_support_nested_variables=yes
 ## ----------------- ##
 
 ACLOCAL='${SHELL} '\''/home/vboxuser/lab3/missing'\'' aclocal-1.16'
-AMDEPBACKSLASH='\'
-AMDEP_FALSE='#'
+AMDEPBACKSLASH=''
+AMDEP_FALSE=''
 AMDEP_TRUE=''
 AMTAR='$${TAR-tar}'
 AM_BACKSLASH='\'
@@ -224,12 +110,12 @@ AWK='mawk'
 CPPFLAGS=''
 CSCOPE='cscope'
 CTAGS='ctags'
-CXX='g++'
-CXXDEPMODE='depmode=gcc3'
-CXXFLAGS='-g -O2'
+CXX=''
+CXXDEPMODE=''
+CXXFLAGS=''
 CYGPATH_W='echo'
-DEFS='-DPACKAGE_NAME=\"program\" -DPACKAGE_TARNAME=\"program\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"program\ 1.0\" -DPACKAGE_BUGREPORT=\"shapovalov.denis@lll.kpi.ua\" -DPACKAGE_URL=\"\" -DPACKAGE=\"program\" -DVERSION=\"1.0\"'
-DEPDIR='.deps'
+DEFS=''
+DEPDIR=''
 ECHO_C=''
 ECHO_N='-n'
 ECHO_T=''
@@ -245,7 +131,7 @@ LIBS=''
 LTLIBOBJS=''
 MAKEINFO='${SHELL} '\''/home/vboxuser/lab3/missing'\'' makeinfo'
 MKDIR_P='/usr/bin/mkdir -p'
-OBJEXT='o'
+OBJEXT=''
 PACKAGE='program'
 PACKAGE_BUGREPORT='shapovalov.denis@lll.kpi.ua'
 PACKAGE_NAME='program'
@@ -258,15 +144,15 @@ SET_MAKE=''
 SHELL='/bin/bash'
 STRIP=''
 VERSION='1.0'
-ac_ct_CXX='g++'
+ac_ct_CXX=''
 am__EXEEXT_FALSE=''
-am__EXEEXT_TRUE='#'
-am__fastdepCXX_FALSE='#'
+am__EXEEXT_TRUE=''
+am__fastdepCXX_FALSE=''
 am__fastdepCXX_TRUE=''
-am__include='include'
+am__include=''
 am__isrc=''
 am__leading_dot='.'
-am__nodep='_no'
+am__nodep=''
 am__quote=''
 am__tar='$${TAR-tar} chof - "$$tardir"'
 am__untar='$${TAR-tar} xf -'
@@ -276,7 +162,7 @@ datadir='${datarootdir}'
 datarootdir='${prefix}/share'
 docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
 dvidir='${docdir}'
-exec_prefix='${prefix}'
+exec_prefix='NONE'
 host_alias=''
 htmldir='${docdir}'
 includedir='${prefix}/include'
@@ -290,7 +176,7 @@ mandir='${datarootdir}/man'
 mkdir_p='$(MKDIR_P)'
 oldincludedir='/usr/include'
 pdfdir='${docdir}'
-prefix='/usr/local'
+prefix='NONE'
 program_transform_name='s,x,x,'
 psdir='${docdir}'
 runstatedir='${localstatedir}/run'
@@ -313,4 +199,4 @@ target_alias=''
 #define PACKAGE "program"
 #define VERSION "1.0"
 
-configure: exit 0
+configure: exit 2
